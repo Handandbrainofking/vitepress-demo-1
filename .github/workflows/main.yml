@@ -51,4 +51,4 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: toimc/toimc.github.io
           publish_branch: master  # default: gh-pages
-          publish_dir: .vitepress/dist
+          publish_dir: docs/.vitepress/dist
