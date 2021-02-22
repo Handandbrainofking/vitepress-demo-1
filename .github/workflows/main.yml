@@ -45,11 +45,11 @@ jobs:
       - name: Build
         run: npm run build
         
-      - name: Check Files
-        run: |
-          ls -ls
-          ls -ls docs/
-          ls -ls docs/.vitepress
+#       - name: Check Files
+#         run: |
+#           ls -la
+#           ls -la docs/
+#           ls -la docs/.vitepress
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
