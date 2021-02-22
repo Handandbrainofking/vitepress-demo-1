@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deploy To Github Pages
 
 # Controls when the action will run. 
 on:
@@ -43,7 +43,13 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm build
+        run: npm run build
+        
+      - name: Check Files
+        run: |
+          ls -ls
+          ls -ls docs/
+          ls -ls docs/.vitepress
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
